@@ -1,0 +1,42 @@
+.container {
+    margin: auto;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;    
+    /* flex-wrap: wrap; */
+    border: 6px solid red;
+    border-radius: 6%;
+    width: 40rem;
+    justify-content: center;
+    
+}
+
+.search-box{
+    height: 5rem;
+    border: 6px solid red;
+    align-content: center;
+}
+
+.results {
+    border: 6px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.no-results {
+    border: 6px solid red;
+}
+
+.results > img {
+    max-height: 150px;
+    border: 6px solid red;
+}
+
+.results > div {
+    
+    border: 6px solid red;
+    flex-basis: 70%
+}
+
