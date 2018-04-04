@@ -1,42 +1,104 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #EEEEEE;
+    font-family: 'Raleway', 'sans-serif'
+}
+
+/* CONTAINER */
+
 .container {
     margin: auto;
     margin-top: 5rem;
     display: flex;
     flex-direction: column;    
     /* flex-wrap: wrap; */
-    border: 6px solid red;
+    background-color: white;
     border-radius: 6%;
     width: 40rem;
-    justify-content: center;
+    justify-content: space-between;
+    align-items:stretch;
+    box-shadow: 0px 10px 50px rgb(75, 72, 72);
     
 }
+
+/* SEARCH BOX */
 
 .search-box{
-    height: 5rem;
-    border: 6px solid red;
-    align-content: center;
+    height: 5rem;    
+    margin: auto;   
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    
+    width: 100%;
 }
 
-.results {
-    border: 6px solid red;
+.search-box > input {
+    margin: 2rem 0;
+    height: 2rem;
+    flex-basis: 60%;
+    margin-right: 5px;    
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1px solid rgb(75, 72, 72);
+}
+.search-box > input, textarea {
+    outline: none;
+}
+.search-box > button {
+    margin: 2rem 0;
+    height: 2.4rem;
+    flex-basis: 20%;
+    padding: 0.5em;
+    margin-left: 5px;
+    border-radius: 8px;
+    font-size: 1rem;   
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+}
+
+/* USER INFO */
+
+.user-data {    
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
 }
+
+.user-data > img {
+    max-height: 150px;
+    
+}
+
+.user-data > div {    
+    flex-basis: 60%;
+    margin-left: 10px;    
+}
+
+/* REPOS */
+
+.user-repos > h2 {
+    margin-left:8%;
+    
+}
+
+.user-repos > hr {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));    
+}
+
+
+
 
 .no-results {
-    border: 6px solid red;
+    /* border: 6px solid red; */
 }
 
-.results > img {
-    max-height: 150px;
-    border: 6px solid red;
-}
-
-.results > div {
-    
-    border: 6px solid red;
-    flex-basis: 70%
-}
 
